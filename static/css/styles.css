@@ -1,0 +1,41 @@
+body {
+    background-color: whitesmoke;
+}
+
+#dashboardLabel {
+    margin-top: 100px;
+}
+
+#tile {
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+#long-tile {
+    position: relative;
+    display: block;
+    color: #1d1d1d;
+    background-color: white;
+    height: auto;
+    border-radius: 25px;
+}
+
+#long-tile-completed {
+    position: relative;
+    display: block;
+    color: grey;
+    text-decoration-line: line-through;
+    text-decoration-color: grey;
+    background-color: darkgray;
+    height: auto;
+    border-radius: 25px;
+}
+
+#todoListLabel {
+    position: absolute;
+    bottom: 0;
+}

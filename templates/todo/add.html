@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Add new task
+{% endblock %}
+
+{% block body %}
+    <h1 id="dashboardLabel">Hello, {{ user.username }}.</h1>
+    <div class="row">
+        <div class="col-12">
+            <h3 class="justify-content-start text-secondary fw-light mt-3">Add a new task</h3>
+        </div>
+    </div>
+    <form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input class="btn btn-primary mt-3" type="submit" value="Add">
+    <a class="btn btn-secondary mt-3" href="{% url 'index' %}">Go back</a>
+    </form>
+{% endblock %}
